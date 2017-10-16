@@ -1,0 +1,7 @@
+@import '~@astonio/ui/theming';
+@import '~@astonio/model-ui/theming';
+ 
+$ast-base-theme: ast-ui-base-theme();
+ 
+@include ast-ui-theme($ast-base-theme);
+@include ast-model-ui-theme($ast-base-theme);

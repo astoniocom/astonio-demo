@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('astonio-shop App', () => {
+describe('astonio-demo App', () => {
   let page: AppPage;
 
   beforeEach(() => {
