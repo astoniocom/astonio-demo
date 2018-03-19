@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   constructor(private wm:WindowsManager, private mwd:ModelWindowsDispatcher, private vcr:ViewContainerRef, private backend:Backend, private cdr:ChangeDetectorRef) {
     this.backend.bootstrapped.subscribe(() => {
       this.tables = [...this.backend.listModels.values()]; 
-      this.cdr.detectChanges();
+      this.cdr.markForCheck();
     });	
   }
  
